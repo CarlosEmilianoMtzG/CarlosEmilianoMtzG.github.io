@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/paleta-de-hielo.png">
     <title>Inicio | Paletas </title>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -42,7 +43,180 @@
         </div>
     </nav>
 
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/HC1.jpg" class="d-block w-100" alt="HeroCarousel1 " style="object-fit: cover; height: 450px">
+            <div class="carousel-caption d-none d-md-block">
+        <h5>Paleta de Hielo</h5>
+        <p>Es la clásica paleta con un alto contenido de agua y 20% de sólidos en la mezcla.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/HC2.jpg" class="d-block w-100" alt="HeroCarousel2 " style="object-fit: cover; height: 450px">
+            <div class="carousel-caption d-none d-md-block">
+        <h5>Paleta Gourmet</h5>
+        <p>Tiene un contenido de sólidos más elevado y una formulación más técnica, lo que permite una mejor textura y sabor.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/HC3.jpg" class="d-block w-100" alt="HeroCarousel3" style="object-fit: cover; height: 450px">
+            <div class="carousel-caption d-none d-md-block">
+        <h5>Paleta de Frutas</h5>
+        <p>Pueden prepararse con frutas frescas, jugos naturales o combinaciones de ingredientes para crear una golosina saludable y casera.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
+  <!-- Productos -->
+    <section id="productos" class="container py-5">
+      <h2 class="text-center mb-4 fw-bold">Nuestros sabores</h2>
+
+      <div class="row g-4">
+        <!-- 1 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Fresa"
+              src="./assets/fresa.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Fresa</h5>
+              <p>Clásica y dulce, hecha con fresa natural.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+              >
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Mango"
+              src="./assets/mango.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Mango</h5>
+              <p>Un sabor tropical refrescante.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+              >
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Limón"
+              src="./assets/limon.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Limón</h5>
+              <p>Ácida y perfecta para el calor.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+              >
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Sandía"
+              src="./assets/sandia.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sandía</h5>
+              <p>Refrescante y totalmente veraniega.</p>
+              <p>Comprar por $20</p>
+             <button
+                type="button"
+                class="btn btn-danger"
+              >
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </button>
+            </div>
+          </div>
+        </div>
+                <!-- 5 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Piña"
+              src="./assets/piña.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Piña</h5>
+              <p>Dulce, jugosa y con sabor natural.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+              >
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Coco"
+              src="./assets/coco.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Coco</h5>
+              <p>Suave, cremosa y con ralladura real.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+              >
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
 
 
     <!--Footer-->
@@ -63,6 +237,8 @@
                 </div>
             </div>
         </div>
+
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/paleta-de-hielo.png">
     <title>Productos | Paletas </title>
+    <script src="./js/carrito.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -42,7 +44,362 @@
         </div>
     </nav>
 
+ <!-- Hero -->
+    <header class="bg-danger text-white text-center py-5">
+      <h1 class="fw-bold">Las mejores paletas artesanales</h1>
+      <p class="lead">Frescas, deliciosas y hechas con amor. 💙</p>
+      <a href="#productos" class="btn btn-light btn-lg mt-3">Ver productos</a>
+    </header>
+    <!-- Productos -->
+    <section id="productos" class="container py-5">
+      <h2 class="text-center mb-4 fw-bold">Nuestros sabores</h2>
 
+      <div class="row g-4">
+        <!-- 1 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Fresa"
+              src="./assets/fresa.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Fresa</h5>
+              <p>Clásica y dulce, hecha con fresa natural.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Fresa', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Mango"
+              src="./assets/mango.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Mango</h5>
+              <p>Un sabor tropical refrescante.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Mango', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Limón"
+              src="./assets/limon.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Limón</h5>
+              <p>Ácida y perfecta para el calor.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Limón', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Sandía"
+              src="./assets/sandia.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sandía</h5>
+              <p>Refrescante y totalmente veraniega.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Sandía', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Piña"
+              src="./assets/piña.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Piña</h5>
+              <p>Dulce, jugosa y con sabor natural.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Piña', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Coco"
+              src="./assets/coco.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Coco</h5>
+              <p>Suave, cremosa y con ralladura real.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Coco', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Vainilla"
+              src="./assets/vainilla.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Vainilla</h5>
+              <p>Clásica y cremosa, perfecta para todos.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Vainilla', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Chocolate"
+              src="./assets/chocolate.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Chocolate</h5>
+              <p>Espesa, dulce y hecha con cacao real.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Chocolate', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Tamarindo"
+              src="./assets/tamarindo.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Tamarindo</h5>
+              <p>Agridulce y favorita en México.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Tamarindo', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Nuez"
+              src="./assets/nuez.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Nuez</h5>
+              <p>Cremosa con trocitos de nuez real.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Nuez', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Grosella"
+              src="./assets/grosella.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Grosella</h5>
+              <p>Dulce, vibrante y llena de color.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Grosella', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Guayaba"
+              src="./assets/guayaba.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Guayaba</h5>
+              <p>Suave y perfumada, muy mexicana.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Guayaba', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Uva"
+              src="./assets/uva.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Uva</h5>
+              <p>Dulce, ligera y muy refrescante.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Uva', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              title="Sabor Chicle"
+              src="./assets/chicle.png"
+              class="card-img"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Chicle</h5>
+              <p>Ideal para niños, colorida y divertida.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Chicle', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              src="./assets/galleta.png"
+              class="card-img"
+              title="Sabor Galleta"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Oreo</h5>
+              <p>Cremosa con galleta molida.</p>
+              <p>Comprar por $20</p>
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="addToCart('Oreo', 20)"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <!--Footer-->

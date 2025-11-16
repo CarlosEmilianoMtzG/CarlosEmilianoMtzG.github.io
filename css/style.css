@@ -1,0 +1,9 @@
+body{
+    background-color: beige;
+}
+.card-img {
+  max-width: 100%;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
